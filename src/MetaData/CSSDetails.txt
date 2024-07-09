@@ -1,0 +1,4 @@
+//CSS details fro items
+heading1 = heading for Login and Register
+hyperLinkLayout1 = layout for links in login and registration page
+buttonLayout1 = single project button column layout

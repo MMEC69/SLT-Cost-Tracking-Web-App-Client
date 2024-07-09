@@ -1,0 +1,289 @@
+.welcomePageLayout{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.welcomeButton{
+    width: 216px;
+    height: 52px;
+    background-color: #C8EEFF;
+    font-size: 20px;
+    color: #9EBAC2;
+    border-radius: 10px;
+}
+.welcomeButton:hover{
+    background-color: #9cddfb;
+    color: #F4F9FA;
+    cursor: pointer;
+}
+/* ================================================== */
+.field1{
+    min-width: 400px;
+    color: #9EBAC2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+}
+.field1 label{
+    width: 100%;
+    font-size: 15px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+.field1 input{
+    width: 100%;
+    border: none;
+    padding: 5px 0px;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    border-bottom: 1px #9EBAC2 solid;
+}
+/* .field1 input:focus{
+    border-bottom: solid rgb(0, 0, 0) 2px;
+}
+.field1 span{
+    text-align: center;
+    width: 80%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(59, 59, 59);
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    display: none;
+}
+.field1 input:invalid[focused = "true"] ~ span{
+    display: block;
+} */
+/* ================================================== */
+.form1{
+    min-width: 500px;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: relative;
+}
+/* ================================================== */
+.heading1{
+    text-align: center;
+    color: #9EBAC2;
+    font-size: 25px;
+    font-weight: bold;
+    margin: -20px 0px -70px 0px;
+}
+/* ================================================== */
+.button1{
+    width: 100%;
+    text-align: center;
+}
+.button1 button{
+    width: 200px;
+    background-color: #C8EEFF;
+    color: #9EBAC2;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}    
+.button1 button:hover{
+    background-color: #9cddfb;
+    color: #ffffff;
+    cursor: pointer;
+}    
+/* ================================================== */
+.button2{
+    width: 100px;
+    text-align: center;
+}
+.button2 button{
+    width: 100px;
+    height: 40px;
+    background-color: #90C9E1;
+    color: #E5F2F5;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+}    
+.button2 button:hover{
+    background-color: #9ed7f0;
+    color: #ffffff;
+    cursor: pointer;
+} 
+/* ================================================== */
+.button3_1{
+    width: 100px;
+    text-align: center;
+}   
+.button3_1 button{
+    width: 80px;
+    height: 30px;
+    background-color: #84BED7;
+    color: #E5F2F5;
+    border-radius: 10px;
+    font-size: 10px;
+}  
+.button3_1 button:hover{
+    background-color: #bbd8e0;
+    color: #ffffff;
+    cursor: pointer;
+}  
+/* ================================================== */
+.button3_2{
+    width: 100px;
+    text-align: center;
+}   
+.button3_2 button{
+    width: 80px;
+    height: 30px;
+    background-color: #F96969;
+    color: #E5F2F5;
+    border-radius: 10px;
+    font-size: 10px;
+}  
+.button3_2 button:hover{
+    background-color: #bbd8e0;
+    color: #ffffff;
+    cursor: pointer;
+}  
+/* ================================================== */
+.button3_3{
+    width: 100px;
+    text-align: center;
+}   
+.button3_3 button{
+    width: 80px;
+    height: 30px;
+    background-color: #FFFFFF;
+    color: #0C2127;
+    border-radius: 10px;
+    font-size: 10px;
+}  
+.button3_3 button:hover{
+    color: #363636;
+    cursor: pointer;
+}  
+/* ================================================== */
+.hyperLinkLayout1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* ================================================== */
+.hyperLink1 h3{
+    font-size: 10px;
+    color: #9EBAC2;
+    font-weight: 400;
+}
+.hyperLink1 h3:hover{
+    color: #bbd8e0;
+}
+/* ================================================== */
+.navbar{
+    width: auto;
+    overflow: hidden;
+    background-color: #C8EEFF;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 10px;
+}
+/* .navbarContainer{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #279D41;
+} */
+/* ================================================== */
+.searchBar{
+    min-width: 200px;
+    width: 60%;
+    height: 40px;
+}
+.searchBar input{
+    width: 100%;
+    height: 100%;
+    background-color: #BBE2F3;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+/* ================================================== */
+.singleProject{
+    width: 100%;
+    min-height: 150px;
+    max-height: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #C8EEFF;
+    border-radius: 10px;
+}
+.projectDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.projectDetails h3{
+    color: #8E979A;
+}
+.projectDetails h4{
+    color: #8E979A;
+}
+.projectDetails h5{
+    color: #279D41;
+}
+.buttonColumn1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.buttonColumn2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.buttonLayout1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* ================================================== */
+.projectList{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* ================================================== */
+.content{
+    width: 100%;
+    z-index: -1;
+    /* margin: 0px 250px 0px 10px; */
+}
+/* ================================================== */
+.home{
+    width: 100%;
+    height: 100vh;
+    margin: 180px 10px 10px 10px; 
+}

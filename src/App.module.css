@@ -506,3 +506,58 @@
     height: 100vh;
     margin: 200px 10px 10px 10px; 
 }
+/* ================================================== */
+.singleStage1{
+    width: 15%;
+    height: 100px;
+    background-color: #E5F2F5;
+    margin: 10px;
+    padding: 20px;
+    color: #8E979A;
+    border-radius: 10px;
+}
+.singleStage1 h3{
+    font-size: 20px;
+}
+.singleStage1 h4{
+    font-size: 15px;
+}
+.singleStage1:hover{
+    box-shadow: 0 0 25px #90C9E1, 0 0 5px #E5F2F5;
+    cursor: pointer;
+}
+.singleStage2{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    margin: 0px 30px 30px 30px;
+    background-color: #E5F2F5;
+    color: #8E979A;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+.singleStage2 h3{
+    font-size: 20px;
+}
+.singleStage2 h4{
+    font-size: 15px;
+}
+.singleStage2:hover{
+    box-shadow: 0 0 25px #90C9E1, 0 0 5px #E5F2F5;
+    cursor: pointer;
+}
+/* ================================================== */
+.stageForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.stageFormRow{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* ================================================== */

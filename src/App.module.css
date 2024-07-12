@@ -385,6 +385,24 @@
     cursor: pointer;
 }  
 /* ================================================== */
+.button7{
+    width: 100px;
+    text-align: center;
+}   
+.button7 button{
+    width: 100%;
+    height: 100%;
+    background-color: #F96969;
+    color: #E5F2F5;
+    border-radius: 10px;
+    font-size: 15px;
+    padding:10px;
+}  
+.button7 button:hover{
+    background-color: #ff8484;
+    cursor: pointer;
+}  
+/* ================================================== */
 .hyperLinkLayout1{
     display: flex;
     flex-direction: row;
@@ -481,11 +499,49 @@
     justify-content: center;
 }
 /* ================================================== */
+.singleProject{
+    width: 100%;
+    min-height: 200px;
+    max-height: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #C8EEFF;
+    border-radius: 10px;
+}
+/* ================================================== */
+.singleUser{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #C8EEFF;
+    border-radius: 10px;
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+}
+.singleUser h4{
+    color: #8E979A;
+}
+/* ================================================== */
 .projectList{
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+/* ================================================== */
+.userList{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #B0E7FF;
+    border-radius: 10px;
+    padding: 10px;
 }
 /* ================================================== */
 .createProject{

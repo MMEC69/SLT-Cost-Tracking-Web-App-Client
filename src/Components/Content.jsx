@@ -1,8 +1,9 @@
 import React, { useContext, useState } from 'react';
 import { GlobalContext } from '../Context/GlobalContext';
-import { activity1, activity2 } from '../MetaData/Activities';
+import { activity1, activity2, activity3 } from '../MetaData/Activities';
 import ProjectList from './ProjectList';
 import DashBoard from './DashBoard';
+import CreateProject from './CreateProject';
 import styles from "../App.module.css";
 
 export default function () {
@@ -13,6 +14,9 @@ export default function () {
             <DashBoard/>
         }
         {activity === activity2 && 
+            <CreateProject/>
+        }
+        {activity === activity3 && 
             <ProjectList/>
         }
     </div>

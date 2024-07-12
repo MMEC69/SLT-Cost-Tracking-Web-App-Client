@@ -2,9 +2,16 @@
 1. Form1 = Register Form
 2. Form2 = Login Form
 3. Form3 = Create Project Form
-4. Filed2 = Home fourms field
+3. Form4 = create project stake holder fourms (Repeatable component)
+3. Form5 = create project stake holder gourm
+4. Field2 = Home fourms field
+4. Field3 = create project stake holder field
 5. heading1 = heading for Login and Register
+5. heading2 = heading for Stakeholder
+5. heading3 = heading for stakeholder form
 6. button1 = submit button for login and refister
 7. HyperLink1 - HyperLink for login and register
 8. button2 - navbar buttons
 9. button3 - single project buttons
+9. button4 - Stakeholder delete button
+9. button5 - Stake holder add button

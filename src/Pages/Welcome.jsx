@@ -7,7 +7,12 @@ export default function Welcome() {
   const navigate = useNavigate();
     return (
     <div>
-        <button className={styles.welcomeButton}><b>{welcomeButton}</b></button>
+        <button 
+          className={styles.welcomeButton}
+          onClick={() => {navigate("/login")}}
+        >
+          <b>{welcomeButton}</b>
+        </button>
     </div>
-  )
+  );
 }

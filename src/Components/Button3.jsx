@@ -17,21 +17,29 @@ export function Button3_1(props) {
   );
 }
 
-export function Button3_2() {
+export function Button3_2(props) {
+  const {
+    buttonName,
+    onClick
+  } = props;
     return (
       <div className={styles.button3_2}>
           <button>
-              Click
+            {buttonName}
           </button>
       </div>
     );
 }
 
-export function Button3_3() {
+export function Button3_3(props) {
+  const {
+    buttonName,
+    onClick
+  } = props;
     return (
       <div className={styles.button3_3}>
           <button>
-              Click
+            {buttonName}
           </button>
       </div>
     );

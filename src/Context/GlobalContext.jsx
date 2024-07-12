@@ -4,11 +4,14 @@ export const GlobalContext = createContext({});
 
 export function GlobalContextProvider({children}){
     const [activity, setActivity] = useState(activity1);
+    const [popup, setPopup] = useState(null)
 
     return (
         <GlobalContext.Provider value = {{
             activity,
-            setActivity
+            setActivity,
+            popup,
+            setPopup
         }}>
             {children}
         </GlobalContext.Provider>

@@ -277,16 +277,18 @@
 } 
 /* ================================================== */
 .button3_1{
-    width: 100px;
+    width: 120px;
+    height: 40px;
     text-align: center;
 }   
 .button3_1 button{
-    width: 80px;
-    height: 30px;
+    width: 100px;
+    height: 100%;
     background-color: #84BED7;
     color: #E5F2F5;
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 12px;
+    padding: 10px;
 }  
 .button3_1 button:hover{
     background-color: #bbd8e0;
@@ -295,16 +297,18 @@
 }  
 /* ================================================== */
 .button3_2{
-    width: 100px;
+    width: 120px;
+    height: 40px;
     text-align: center;
 }   
 .button3_2 button{
-    width: 80px;
-    height: 30px;
+    width: 100px;
+    height: 100%;
     background-color: #F96969;
     color: #E5F2F5;
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 12px;
+    padding: 10px;
 }  
 .button3_2 button:hover{
     background-color: #bbd8e0;
@@ -313,16 +317,18 @@
 }  
 /* ================================================== */
 .button3_3{
-    width: 100px;
+    width: 120px;
+    height: 40px;
     text-align: center;
 }   
 .button3_3 button{
-    width: 80px;
-    height: 30px;
+    width: 100px;
+    height: 100%;
     background-color: #FFFFFF;
     color: #0C2127;
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 12px;
+    padding: 10px;
 }  
 .button3_3 button:hover{
     color: #363636;
@@ -443,7 +449,7 @@
 .singleProject{
     width: 100%;
     min-height: 150px;
-    max-height: 250px;
+    max-height: 300px;
     padding: 10px;
     display: flex;
     flex-direction: row;

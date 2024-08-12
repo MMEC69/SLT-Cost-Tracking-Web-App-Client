@@ -683,5 +683,37 @@
 }
 /* ================================================== */
 .popUpCommentDisplayArea{
-    
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* ================================================== */
+.singlePopUpComment{
+    width: 100%;
+    background-color: #F3F9FC;
+    display: flex;
+    flex-direction: row;
+}
+.commentDescription{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.commentProfilePicture{
+    font-size: 15px;
+}
+.commentDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.commentTime{
+    width: 8%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: right;
 }

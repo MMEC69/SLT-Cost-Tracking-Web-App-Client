@@ -1,6 +1,7 @@
 import React from 'react';
 import {PopUpTitle} from './PopUpTitle';
 import styles from "../App.module.css";
+import { PopUpCommentDisplayArea } from './PopUpDisplayArea';
 
 export default function AddCommentPopUp(props) {
     const {
@@ -11,6 +12,7 @@ export default function AddCommentPopUp(props) {
     <div>   
         <div>
             <PopUpTitle/>
+            <PopUpCommentDisplayArea/>
         </div>
     </div>
   );

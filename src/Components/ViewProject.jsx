@@ -7,25 +7,33 @@ import SingleCost from './SingleCost';
 export default function ViewProject() {
   return (
     <div className={styles.viewProject}>
-        <div className={styles.projectFormDetails}>
-            <StageForm/>
-            <Form3/>
-        </div>
-        <div className={styles.projectCostList}>
-            <SingleCost/>
-            <SingleCost/>
-            <SingleCost/>
-            <SingleCost/>
-            <SingleCost/>
-            <SingleCost/>
-            <SingleCost/>
-            <SingleCost/>
-            <SingleCost/>
-            <SingleCost/>
-            <SingleCost/>
-            <SingleCost/>
+        <div className={styles.projectStageFormDetails}>
+          <StageForm/>
         </div>
         
+        <div className={styles.projectDetails}>
+          <div className={styles.projectFormDetailsWrapper}>
+            <div className={styles.projectFormDetails}>
+              <Form3/>
+            </div>
+          </div>
+          <div className={styles.projectCostListWrapper}>
+            <div className={styles.projectCostList}>
+              <SingleCost/>
+              <SingleCost/>
+              <SingleCost/>
+              <SingleCost/>
+              <SingleCost/>
+              <SingleCost/>
+              <SingleCost/>
+              <SingleCost/>
+              <SingleCost/>
+              <SingleCost/>
+              <SingleCost/>
+              <SingleCost/>
+            </div>
+          </div>
+        </div>
     </div>
   );
 }

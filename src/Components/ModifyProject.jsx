@@ -4,7 +4,7 @@ import Form3 from './Form3';
 import styles from "../App.module.css";
 import SingleCost from './SingleCost';
 
-export default function ViewProject() {
+export default function ModifyProject() {
   return (
     <div className={styles.viewProject}>
         <div className={styles.projectStageFormDetails}>

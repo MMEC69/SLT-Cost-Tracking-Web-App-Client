@@ -287,7 +287,7 @@
     padding: 5px;
 }  
 .button3_1 button:hover{
-    background-color: #bbd8e0;
+    background-color: #a1c9da;
     color: #ffffff;
     cursor: pointer;
 }  
@@ -306,7 +306,7 @@
     padding: 5px;
 }  
 .button3_2 button:hover{
-    background-color: #bbd8e0;
+    background-color: #fc9191;
     color: #ffffff;
     cursor: pointer;
 }  
@@ -615,15 +615,23 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.stageFormRow.stageFormButtonLayout{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: left;
 }
 /* ================================================== */
 .viewProject{
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    gap: 10px;
 }
 .projectFormDetails{
     width: 100%;
@@ -642,12 +650,15 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-color:#B0E7FF;
+    border-radius: 20px;
 }
-.projectDetails{
+.projectInformation{
     width: 100%;
     height: 70vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .projectCostListWrapper{
     width: 30%;
@@ -666,3 +677,11 @@
     position: relative;
 }
 /* ================================================== */
+.popUpTitle{
+    width: 100%;
+    height: 30px;
+}
+/* ================================================== */
+.popUpCommentDisplayArea{
+    
+}

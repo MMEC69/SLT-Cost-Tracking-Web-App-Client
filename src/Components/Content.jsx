@@ -8,7 +8,9 @@ import {
     activity5, 
     activity6, 
     activity7, 
-    activity8 } from '../MetaData/Activities';
+    activity8,
+    activity9
+ } from '../MetaData/Activities';
 import ProjectList from './ProjectList';
 import DashBoard from './DashBoard';
 import CreateProject from './CreateProject';
@@ -18,6 +20,7 @@ import SuperAdmin from './SuperAdmin';
 import Profile from './Profile';
 import styles from "../App.module.css";
 import ViewProject from './ViewProject';
+import ModifyProject from './ModifyProject';
 
 export default function () {
     const {activity, setActivity} = useContext(GlobalContext);
@@ -46,6 +49,9 @@ export default function () {
         }
         {activity === activity8 && 
             <ViewProject/>
+        }
+        {activity === activity9 && 
+            <ModifyProject/>
         }
     </div>
   );

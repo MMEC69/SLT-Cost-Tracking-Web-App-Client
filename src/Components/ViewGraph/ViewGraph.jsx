@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ViewGraph() {
+export function ViewGraph() {
   return (
     <div>ViewGraph</div>
   );

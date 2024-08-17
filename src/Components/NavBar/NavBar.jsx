@@ -1,9 +1,17 @@
 import React, { useContext } from 'react';
-import Button2 from './Button2';
-import styles from "../App.module.css";
-import SearchBar from './SearchBar';
-import { activity1, activity2, activity3 , activity4, activity5, activity6, activity7} from '../MetaData/Activities';
-import { GlobalContext } from '../Context/GlobalContext';
+import {NavBarButton} from '../Buttons/Buttons.jsx';
+import styles from "../../App.module.css";
+import {NavBarSearchBar} from '../SearchBar/SearchBar.jsx';
+import { 
+    activity1, 
+    activity2, 
+    activity3, 
+    activity4, 
+    activity5, 
+    activity6, 
+    activity7
+} from '../../MetaData/Activities';
+import { GlobalContext } from '../../Context/GlobalContext';
 
 export default function NavBar() {
     const {activity, setActivity} = useContext(GlobalContext);
@@ -59,32 +67,32 @@ export default function NavBar() {
   return (
     <div className={styles.navbarContainer}>
         <div className={styles.navbar}>
-            <Button2
+            <NavBarButton
                 onClick = {activity1Function}
                 buttonName = "Dashboard"
             />
-            <Button2
+            <NavBarButton
                 onClick = {activity2Function}
                 buttonName = "Create Project"
             />
-            <Button2
+            <NavBarButton
                 onClick = {activity3Function}
                 buttonName = "Project List"
             />
-            <Button2
+            <NavBarButton
                 onClick = {activity4Function}
                 buttonName = "View Graph"
             />
-            <Button2
+            <NavBarButton
                 onClick = {activity5Function}
                 buttonName = "View Users"
             />
-            <Button2
+            <NavBarButton
                 onClick = {activity6Function}
                 buttonName = "Super Admin"
             />
-            <SearchBar/>
-            <Button2
+            <NavBarSearchBar/>
+            <NavBarButton
                 onClick = {activity7Function}
                 buttonName = "Profile"
             />

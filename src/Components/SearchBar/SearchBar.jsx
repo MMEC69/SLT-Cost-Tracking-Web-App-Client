@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from "../App.module.css";
+import styles from "../../App.module.css";
 
-export default function SearchBar() {
+export function NavBarSearchBar() {
   return (
-    <div className={styles.searchBar}>
+    <div className={styles.navBarSearchBar}>
         <input 
             type="text" 
             placeholder='Search'

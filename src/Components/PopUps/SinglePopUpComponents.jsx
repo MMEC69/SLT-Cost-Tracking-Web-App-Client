@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { FaUserCircle } from "react-icons/fa";
-import styles from "../App.module.jsx";
+import styles from "../../App.module.css";
 
 export function SinglePopUpComment() {
   return (

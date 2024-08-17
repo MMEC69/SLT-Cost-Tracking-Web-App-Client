@@ -1,10 +1,16 @@
 import React from 'react';
-import SingleUser from './SingleUser';
-import styles from "../App.module.css";
+import {
+  SingleUser,
+  SingleUserAdmin,
+  SingleUserSuperAdmin
+} from '../SingleView/SingleUser.jsx';
+import styles from "../../App.module.css";
 
-export default function ViewUsers() {
+export function ViewUsers() {
   return (
     <div className={styles.userList}>
+        <SingleUserSuperAdmin/>
+        <SingleUserAdmin/>
         <SingleUser/>
         <SingleUser/>
         <SingleUser/>

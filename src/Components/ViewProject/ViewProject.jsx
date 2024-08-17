@@ -1,10 +1,10 @@
 import React from 'react';
-import StageForm from './StageForm';
-import Form3 from './Form3';
-import styles from "../App.module.css";
-import SingleCost from './SingleCost';
+import StageForm from '../StageForm';
+import {CreateNewProjectForm} from '../Forms/Forms';
+import styles from "../../App.module.css";
+import {SingleCost} from '../SingleView/SingleCost';
 
-export default function ViewProject() {
+export function ViewProject() {
   return (
     <div className={styles.viewProject}>
         <div className={styles.projectStageFormDetails}>
@@ -14,7 +14,7 @@ export default function ViewProject() {
         <div className={styles.projectInformation}>
           <div className={styles.projectFormDetailsWrapper}>
             <div className={styles.projectFormDetails}>
-              <Form3/>
+              <CreateNewProjectForm/>
             </div>
           </div>
           <div className={styles.projectCostListWrapper}>

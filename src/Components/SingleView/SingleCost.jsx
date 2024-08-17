@@ -1,11 +1,21 @@
 import React, { useContext } from 'react';
-import styles from "../App.module.css";
-import { Button3_1, Button3_3, Button3_2 } from './Button3';
-import { GlobalContext } from '../Context/GlobalContext';
-import { activity8, activity9 } from '../MetaData/Activities';
-import { popup1, popup2, popup3, popup4 } from '../MetaData/Popups';
+import styles from "../../App.module.css";
+import {   
+    SingleProjectViewFunctionButton, 
+    SingleProjectViewRemoveButton, 
+    SingleProjectViewSelectButton 
+} from '../Buttons/Buttons';
+import { GlobalContext } from '../../Context/GlobalContext';
+import { 
+    activity8, 
+    activity9 
+} from '../../MetaData/Activities';
+import { 
+    popup3, 
+    popup4 
+} from '../../MetaData/Popups';
 
-export default function SingleProject() {
+export function SingleCost() {
     const {
         activity, 
         setActivity,
@@ -25,20 +35,6 @@ export default function SingleProject() {
         setActivity(activity9);
         console.log(`> Current activity : ${activity}`);
         console.log("> activity9Function ended");
-    }
-    const popup1Function = () => {
-        console.log("> popup1Function initiated");
-        console.log(`> Previous popup : ${popup}`);
-        setPopup(popup1);
-        console.log(`> Current popup : ${popup}`);
-        console.log("> popup1Function ended");
-    }
-    const popup2Function = () => {
-        console.log("> popup2Function initiated");
-        console.log(`> Previous popup : ${popup}`);
-        setPopup(popup2);
-        console.log(`> Current popup : ${popup}`);
-        console.log("> popup2Function ended");
     }
     const popup3Function = () => {
         console.log("> popup3Function initiated");
@@ -64,29 +60,21 @@ export default function SingleProject() {
         </div>
         <div className={styles.buttonLayout1}>
             <div className={styles.buttonColumn1}>
-                <Button3_1
-                    buttonName = "Add Comment"
-                    onClick = {popup1Function}
-                />
-                <Button3_1
-                    buttonName = "Add Cost"
-                    onClick = {popup2Function}
-                />
-                <Button3_3
+                <SingleProjectViewSelectButton
                     buttonName = "Select State"
                     onClick = {popup3Function}
                 />
             </div>
             <div className={styles.buttonColumn2}>
-                <Button3_1
+                <SingleProjectViewFunctionButton
                     buttonName = "View"
                     onClick = {activity8Function}
                 />
-                <Button3_1
+                <SingleProjectViewFunctionButton
                     buttonName = "Modify"
                     onClick = {activity9Function}
                 />
-                <Button3_2
+                <SingleProjectViewRemoveButton
                     buttonName = "Remove"
                     onClick = {popup4Function}
                 />

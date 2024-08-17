@@ -1,17 +1,22 @@
-import React, { useContext } from 'react';
-import styles from "../App.module.css";
-import { Button3_1, Button3_3, Button3_2 } from './Button3';
-import { GlobalContext } from '../Context/GlobalContext';
-import { activity8, activity9 } from '../MetaData/Activities';
-import { popup3, popup4 } from '../MetaData/Popups';
+import React, { useContext, useState } from 'react';
+import styles from "../../App.module.css";
+import { 
+    SingleProjectViewFunctionButton, 
+    SingleProjectViewSelectButton, 
+    SingleProjectViewRemoveButton 
+} from '../Buttons/Buttons.jsx';
+import { GlobalContext } from '../../Context/GlobalContext.jsx';
+import { activity8, activity9 } from '../../MetaData/Activities.jsx';
+import {AddCommentPopUp} from '../PopUps/PopUps.jsx';
 
-export default function SingleCost() {
+export default function SingleProject() {
     const {
         activity, 
         setActivity,
-        popup,
-        setPopup
     } = useContext(GlobalContext);
+
+    const [trigger1, setTrigger1] = useState(false);
+
     const activity8Function = () => {
         console.log("> activity8Function initiated");
         console.log(`> Previous activity : ${activity}`);
@@ -26,18 +31,25 @@ export default function SingleCost() {
         console.log(`> Current activity : ${activity}`);
         console.log("> activity9Function ended");
     }
+    const addCommentHandleClick = () => {
+        console.log("> addCommentHandleClick initiated");
+        setTrigger1(true);
+        console.log(trigger1)
+        console.log("> addCommentHandleClick ended");
+    }
+    const popup2Function = () => {
+        console.log("> popup2Function initiated");
+        setPopup(popup2);
+        console.log("> popup2Function ended");
+    }
     const popup3Function = () => {
         console.log("> popup3Function initiated");
-        console.log(`> Previous popup : ${popup}`);
         setPopup(popup3);
-        console.log(`> Current popup : ${popup}`);
         console.log("> popup3Function ended");
     }
     const popup4Function = () => {
         console.log("> popup4Function initiated");
-        console.log(`> Previous popup : ${popup}`);
         setPopup(popup4);
-        console.log(`> Current popup : ${popup}`);
         console.log("> popup4Function ended");
     }
   return (
@@ -50,25 +62,37 @@ export default function SingleCost() {
         </div>
         <div className={styles.buttonLayout1}>
             <div className={styles.buttonColumn1}>
-                <Button3_3
+                <SingleProjectViewFunctionButton
+                    buttonName = "Add Comment"
+                    onClick = {addCommentHandleClick}
+                />
+                <SingleProjectViewFunctionButton
+                    buttonName = "Add Cost"
+                    onClick = {popup2Function}
+                />
+                <SingleProjectViewSelectButton
                     buttonName = "Select State"
                     onClick = {popup3Function}
                 />
             </div>
             <div className={styles.buttonColumn2}>
-                <Button3_1
+                <SingleProjectViewFunctionButton
                     buttonName = "View"
                     onClick = {activity8Function}
                 />
-                <Button3_1
+                <SingleProjectViewFunctionButton
                     buttonName = "Modify"
                     onClick = {activity9Function}
                 />
-                <Button3_2
+                <SingleProjectViewRemoveButton
                     buttonName = "Remove"
                     onClick = {popup4Function}
                 />
             </div>
+            <AddCommentPopUp
+            trigger = {trigger1}
+            setTrigger = {setTrigger1}
+            />
         </div>
     </div>
   );

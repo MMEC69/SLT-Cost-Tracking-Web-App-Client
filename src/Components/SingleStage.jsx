@@ -9,6 +9,7 @@ export function SingleStage_1() {
     </div>
   );
 }
+//=================================================
 export function SingleStage_2() {
     return (
       <div className={styles.singleStage2}>

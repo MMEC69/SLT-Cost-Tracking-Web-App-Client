@@ -20,6 +20,10 @@
     cursor: pointer;
 }
 /* ================================================== */
+.home{
+    background-color: #3a3e3f;
+}
+/* ================================================== */
 .field1{
     min-width: 400px;
     color: #9EBAC2;
@@ -170,6 +174,49 @@
     padding: 10px;
 }
 /* ================================================== */
+.createNewProjectForm{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: #0C2127;
+    border-radius: 10px;
+    padding: 10px;
+}
+.addNewStakeHolderForm{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: #0C2127;
+    border-radius: 10px;
+    padding: 10px;
+}
+.AddNewSingleStakeHolderForm{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    background-color: #182c31;
+    border-radius: 10px;
+    padding: 10px;
+}
+.AddNewSingleStakeHolderFieldListForm{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    background-color: #182c31;
+    border-radius: 10px;
+    padding: 10px;
+}
+/* ================================================== */
 .form3{
     width: 100%;
     /* height: 100%; */
@@ -261,72 +308,50 @@
 .button2 button{
     width: 100px;
     height: 50px;
-    background-color: #90C9E1;
-    color: #E5F2F5;
+    background-color: #4e595d;
+    color: #c6cbcc;
     padding: 10px;
     border-radius: 10px;
     font-size: 13px;
 }    
 .button2 button:hover{
-    background-color: #9ed7f0;
+    background-color: #1c2b2f;
     color: #ffffff;
     cursor: pointer;
 } 
 /* ================================================== */
-.button3_1{
+.singleProjectViewButton{
     width: 120px;
     text-align: center;
 }   
-.button3_1 button{
+.singleProjectViewButton button{
     width: 100px;
     height: 50px;
-    background-color: #84BED7;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+}  
+.singleProjectViewButton.singleProjectViewFunctionButton button{
+    background-color: #24353b;
+    color: #b5c7c7;
+}  
+.singleProjectViewButton.singleProjectViewFunctionButton button:hover{
+    background-color: #3a484c;
+}  
+.singleProjectViewButton.singleProjectViewSelectButton button{
+    background-color: #3e616d;
     color: #E5F2F5;
-    border-radius: 10px;
-    font-size: 12px;
-    padding: 5px;
 }  
-.button3_1 button:hover{
-    background-color: #a1c9da;
-    color: #ffffff;
-    cursor: pointer;
+.singleProjectViewButton.singleProjectViewSelectButton button:hover{
+    background-color: rgb(73, 112, 127);
 }  
-/* ================================================== */
-.button3_2{
-    width: 120px;
-    text-align: center;
-}   
-.button3_2 button{
-    width: 100px;
-    height: 50px;
-    background-color: #F96969;
+.singleProjectViewButton.singleProjectViewRemoveButton button{
+    background-color: #fc4a4a;
     color: #E5F2F5;
-    border-radius: 10px;
-    font-size: 12px;
-    padding: 5px;
 }  
-.button3_2 button:hover{
-    background-color: #fc9191;
-    color: #ffffff;
-    cursor: pointer;
-}  
-/* ================================================== */
-.button3_3{
-    width: 120px;
-    text-align: center;
-}   
-.button3_3 button{
-    width: 100px;
-    height: 50px;
-    background-color: #FFFFFF;
-    color: #0C2127;
-    border-radius: 10px;
-    font-size: 12px;
-    padding: 5px;
-}  
-.button3_3 button:hover{
-    color: #363636;
-    cursor: pointer;
+.singleProjectViewButton.singleProjectViewRemoveButton button:hover{
+    background-color: #ff6969;
 }  
 /* ================================================== */
 .button4{
@@ -403,6 +428,42 @@
     cursor: pointer;
 }  
 /* ================================================== */
+.button8{
+    width: 100px;
+    text-align: center;
+}   
+.button8 button{
+    width: 100%;
+    height: 100%;
+    background-color: #51F47F;
+    color: #E5F2F5;
+    border-radius: 10px;
+    font-size: 15px;
+    padding:10px;
+}  
+.button8 button:hover{
+    background-color: #89f9a9;
+    cursor: pointer;
+}  
+/* ================================================== */
+.button9{
+    width: 100px;
+    text-align: center;
+}   
+.button9 button{
+    width: 100%;
+    height: 100%;
+    background-color: #c2c2c2;
+    color: #E5F2F5;
+    border-radius: 10px;
+    font-size: 15px;
+    padding:10px;
+}  
+.button9 button:hover{
+    background-color: #e6e6e6;
+    cursor: pointer;
+}  
+/* ================================================== */
 .hyperLinkLayout1{
     display: flex;
     flex-direction: row;
@@ -421,7 +482,7 @@
 .navbar{
     width: auto;
     overflow: hidden;
-    background-color: #C8EEFF;
+    background-color: #0C2127;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -438,22 +499,22 @@
     right: 0;
     padding: 10px;
     overflow: hidden;
-    background-color: #F4F9FA;
+    background-color: #3a3e3f;
     border-radius: 10px;
     /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
     text-align: center;
     z-index: +1;
 }
 /* ================================================== */
-.searchBar{
+.navBarSearchBar{
     min-width: 200px;
     width: 60%;
     height: 50px;
 }
-.searchBar input{
+.navBarSearchBar input{
     width: 100%;
     height: 100%;
-    background-color: #BBE2F3;
+    background-color: #232f35;
     padding: 10px;
     font-size: 15px;
     border-radius: 10px;
@@ -467,7 +528,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #C8EEFF;
+    background-color: #12262c;
     border-radius: 10px;
 }
 .projectDetails{
@@ -476,13 +537,14 @@
     justify-content: space-around;
 }
 .projectDetails h3{
-    color: #8E979A;
+    color: #c6cccf;
+    font-size: 25px;
 }
 .projectDetails h4{
-    color: #8E979A;
+    color: #b1b6b8;
 }
 .projectDetails h5{
-    color: #279D41;
+    color: #25c047;
 }
 .buttonColumn1{
     display: flex;
@@ -498,18 +560,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-/* ================================================== */
-.singleProject{
-    width: 100%;
-    min-height: 200px;
-    max-height: 250px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #C8EEFF;
-    border-radius: 10px;
 }
 /* ================================================== */
 .singleUser{
@@ -555,6 +605,7 @@
 .content{
     width: 100%;
     z-index: -1;
+    background-color: #3a3e3f;
     /* margin: 0px 250px 0px 10px; */
 }
 /* ================================================== */
@@ -679,10 +730,17 @@
 /* ================================================== */
 .popUpTitle{
     width: 100%;
-    height: 30px;
+    height: 35px;
+    padding: 2px 10px 2px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #0C2127;
+    align-items: center;
 }
 /* ================================================== */
-.popUpCommentDisplayArea{
+.popUpDisplayArea{
     width: 100%;
     height: 80%;
     padding: 10px;
@@ -717,3 +775,60 @@
     flex-direction: column-reverse;
     justify-content: right;
 }
+/* ================================================== */
+.popUpLayout{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+}
+.popUpLayoutLargeInner{
+    width: 100%;
+    max-width: 800px;
+    height: 560px;
+    position: relative;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.popUpLayoutMediumInner{
+    width: 100%;
+    max-width: 800px;
+    height: 460px;
+    position: relative;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.popUpLayoutSmallInner{
+    width: 100%;
+    max-width: 800px;
+    height: 360px;
+    position: relative;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+/* ================================================== */
+.popUpCloseButton{
+    text-align: center;
+    align-items: center;
+}
+.popUpCloseButton button{
+    width: 100%;
+    height: 100%;
+    padding: 5px 5px;
+    background: #F96969;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.popUpCloseButton :hover{
+    background: #f78282;
+}
+/* ================================================== */

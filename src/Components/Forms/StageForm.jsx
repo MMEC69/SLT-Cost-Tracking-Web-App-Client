@@ -1,9 +1,12 @@
 import React from 'react';
-import { SingleStage_1 } from './SingleStage';
-import { Button3_1, Button3_2 } from './Button3';
-import styles from "../App.module.css";
+import { SingleStage_1 } from '../SingleView/SingleStage';
+import { 
+  SingleProjectViewFunctionButton, 
+  SingleProjectViewRemoveButton 
+} from '../Buttons/Buttons';
+import styles from "../../App.module.css";
 
-export default function StageForm() {
+export function StageForm() {
   // ===============================================
   const handleView = () => {
     console.log("> handleView initiated");
@@ -40,15 +43,15 @@ export default function StageForm() {
             
         </div>
         <div className={`${styles.stageFormRow} ${styles.stageFormButtonLayout}`}>
-          <Button3_1
+          <SingleProjectViewFunctionButton
             buttonName = "View"
             onClick = {handleView}
           />
-          <Button3_1
+          <SingleProjectViewFunctionButton
               buttonName = "Modify"
               onClick = {handleModify}
           />
-          <Button3_2
+          <SingleProjectViewRemoveButton
               buttonName = "Remove"
               onClick = {handleRemove}
           />

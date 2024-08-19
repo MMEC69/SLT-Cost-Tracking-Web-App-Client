@@ -1,5 +1,5 @@
 import React from 'react';
-import StageForm from '../StageForm';
+import {StageForm} from '../Forms/StageForm';
 import {CreateNewProjectForm} from '../Forms/Forms';
 import styles from "../../App.module.css";
 import {SingleCost} from '../SingleView/SingleCost';

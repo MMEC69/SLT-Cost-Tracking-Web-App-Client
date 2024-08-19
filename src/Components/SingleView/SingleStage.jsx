@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from "../App.module.css";
+import styles from "../../App.module.css";
 
+//=================================================
 export function SingleStage_1() {
   return (
     <div className={styles.singleStage1}>

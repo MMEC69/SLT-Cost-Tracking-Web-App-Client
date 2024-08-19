@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from "../App.module.css";
+import styles from "../../App.module.css";
 
-export default function HyperLink1(props) {
+//=============================================
+export function RegisterHyperLink(props) {
   return (
     <div className={styles.hyperLink1}>   
         <Link to = "/register" style = {{textDecoration: 'none'}}>
@@ -11,3 +12,4 @@ export default function HyperLink1(props) {
     </div>
   );
 }
+//==============================================

@@ -1,11 +1,11 @@
 import React from 'react';
-import Form1 from '../Components/Form1';
+import {RegisterForm} from '../Components/Forms/Forms';
 
 export default function Register() {
   return (
     <div>
         <form onSubmit="">
-          <Form1/>
+          <RegisterForm/>
         </form>
     </div>
   )

@@ -71,9 +71,9 @@ export function SingleProjectViewFunctionButton(props) {
       );
   }
 //==========================================================
-export function Button7() {
+export function SingleUserRemoveButton() {
     return (
-      <div className={styles.button7}>
+      <div className={styles.singleUserRemoveButton}>
           <button>
               Remove
           </button>
@@ -81,9 +81,9 @@ export function Button7() {
     );
   }
 //==========================================================
-export function Button8() {
+export function SingleUserTransferButton() {
     return (
-      <div className={styles.button8}>
+      <div className={styles.singleUserTransferButton}>
           <button>
               Transfer
           </button>
@@ -92,9 +92,9 @@ export function Button8() {
   }
   
 //==========================================================
-export function Button9() {
+export function SingleUserViewButton() {
     return (
-      <div className={styles.button9}>
+      <div className={styles.singleUserViewButton}>
           <button>
               View
           </button>
@@ -102,5 +102,43 @@ export function Button9() {
     );
   }
 //==========================================================
-  
-
+export function SubmitButton(props) {
+  return (
+    <div className={styles.button1}>
+        <button>
+            Submit
+        </button>
+    </div>
+  )
+} 
+//==========================================================
+export function RemoveSubFormButton() {
+  return (
+    <div className={styles.button4}>
+        <button>
+            Remove
+        </button>
+    </div>
+  );
+}
+//==========================================================
+export function AddNewStakeHolderButton() {
+  return (
+    <div className={styles.addNewStakeHolderButton}>
+        <button>
+            + Add New Stakeholder
+        </button>
+    </div>
+  );
+}
+//==========================================================
+export function CreateProjectButton() {
+  return (
+    <div className={styles.createProjectButton}>
+       <button>
+            Create Project
+        </button> 
+    </div>
+  );
+}
+//==========================================================

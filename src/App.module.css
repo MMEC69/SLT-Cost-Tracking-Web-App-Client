@@ -24,33 +24,33 @@
     background-color: #3a3e3f;
 }
 /* ================================================== */
-.field1{
+.registerAndLoginFromField{
     min-width: 400px;
-    color: #9EBAC2;
+    color: #fafafa;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: #FFFFFF;
+    background-color: #0C2127;
 }
-.field1 label{
+.registerAndLoginFromField label{
     width: 100%;
     font-size: 15px;
-    background-color: #FFFFFF;
+    background-color: #0C2127;
     text-align: center;
 }
-.field1 input{
+.registerAndLoginFromField input{
     width: 100%;
     border: none;
     padding: 5px 0px;
     font-size: 18px;
-    background-color: #FFFFFF;
-    border-bottom: 1px #9EBAC2 solid;
+    background-color: #0C2127;
+    border-bottom: 1px #fafafa solid;
 }
-/* .field1 input:focus{
+/* .registerAndLoginFromField input:focus{
     border-bottom: solid rgb(0, 0, 0) 2px;
 }
-.field1 span{
+.registerAndLoginFromField span{
     text-align: center;
     width: 80%;
     color: rgb(255, 255, 255);
@@ -60,39 +60,39 @@
     font-size: 15px;
     display: none;
 }
-.field1 input:invalid[focused = "true"] ~ span{
+.registerAndLoginFromField input:invalid[focused = "true"] ~ span{
     display: block;
 } */
 /* ================================================== */
-.field2{
+.createNewProjectFormField{
     min-width: 400px;
     color: #9EBAC2;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: #C8EEFF;
+    background-color: #0C2127;
 }
-.field2 label{
+.createNewProjectFormField label{
     width: 100%;
     font-size: 19px;
     font-weight: bold;
-    background-color: #C8EEFF;
+    background-color: #0C2127;
     text-align: left;
-    color: #8E979A;
+    color: #fdfdfd;
 }
-.field2 input{
+.createNewProjectFormField input{
     width: 100%;
     border: none;
     padding: 5px 0px;
     font-size: 18px;
-    background-color: #C8EEFF;
-    border-bottom: 1px #9EBAC2 solid;
+    background-color: #0C2127;
+    border-bottom: 1px #ffffff solid;
 }
-/* .field2 input:focus{
+/* .createNewProjectFormField input:focus{
     border-bottom: solid rgb(0, 0, 0) 2px;
 }
-.field2 span{
+.createNewProjectFormField span{
     text-align: center;
     width: 80%;
     color: rgb(255, 255, 255);
@@ -102,39 +102,39 @@
     font-size: 15px;
     display: none;
 }
-.field2 input:invalid[focused = "true"] ~ span{
+.createNewProjectFormField input:invalid[focused = "true"] ~ span{
     display: block;
 } */
 /* ================================================== */
-.field3{
+.addNewSingleStakeHolderFormFields{
     min-width: 400px;
     color: #9EBAC2;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: #C8EEFF;
+    background-color: #182c31;
 }
-.field3 label{
+.addNewSingleStakeHolderFormFields label{
     width: 100%;
     font-size: 15px;
     font-weight: bold;
-    background-color: #C8EEFF;
+    background-color: #182c31;
     text-align: left;
-    color: #8E979A;
+    color: #fbfbfb;
 }
-.field3 input{
+.addNewSingleStakeHolderFormFields input{
     width: 100%;
     border: none;
     padding: 5px 0px;
     font-size: 13px;
-    background-color: #C8EEFF;
-    border-bottom: 1px #9EBAC2 solid;
+    background-color: #182c31;
+    border-bottom: 1px #ffffff solid;
 }
-/* .field3 input:focus{
+/* .addNewSingleStakeHolderFormFields input:focus{
     border-bottom: solid rgb(0, 0, 0) 2px;
 }
-.field3 span{
+.addNewSingleStakeHolderFormFields span{
     text-align: center;
     width: 80%;
     color: rgb(255, 255, 255);
@@ -144,18 +144,17 @@
     font-size: 15px;
     display: none;
 }
-.field3 input:invalid[focused = "true"] ~ span{
+.addNewSingleStakeHolderFormFields input:invalid[focused = "true"] ~ span{
     display: block;
 } */
 /* ================================================== */
-.form1{
+.registerLoginForm{
     min-width: 500px;
     min-height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 50px;
-    background-color: #FFFFFF;
+    background-color: #0C2127;
     border-radius: 10px;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -192,7 +191,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    background-color: #0C2127;
+    background-color: #1d3338;
     border-radius: 10px;
     padding: 10px;
 }
@@ -260,22 +259,21 @@
     padding: 10px;
 }
 /* ================================================== */
-.heading1{
+.registerHeading{
     text-align: center;
-    color: #9EBAC2;
+    color: #fafafa;
     font-size: 25px;
     font-weight: bold;
-    margin: -20px 0px -70px 0px;
 }
 /* ================================================== */
-.heading2{
+.stakeholderHeading{
     text-align: left;
-    color: #8E979A;
+    color: #1c5b6e;
     font-size: 17px;
     font-weight: bold;
 }
 /* ================================================== */
-.heading3{
+.individualStakeHolderHeading{
     text-align: left;
     color: #8E979A;
     font-size: 16px;
@@ -288,7 +286,7 @@
 }
 .button1 button{
     width: 200px;
-    background-color: #C8EEFF;
+    background-color: #183037;
     color: #9EBAC2;
     padding: 10px;
     border-radius: 10px;
@@ -296,7 +294,7 @@
     font-size: 15px;
 }    
 .button1 button:hover{
-    background-color: #9cddfb;
+    background-color: #14272d;
     color: #ffffff;
     cursor: pointer;
 }    
@@ -372,85 +370,85 @@
     cursor: pointer;
 }  
 /* ================================================== */
-.button5{
+.addNewStakeHolderButton{
     width: 240px;
     height: 35px;
     text-align: center;
 }   
-.button5 button{
+.addNewStakeHolderButton button{
     width: 100%;
     height: 100%;
-    background-color: #90C9E1;
+    background-color: #152b31;
     color: #E5F2F5;
     border-radius: 10px;
     font-size: 15px;
     font-weight: 500;
 }  
-.button5 button:hover{
-    background-color: #9cd7f0;
+.addNewStakeHolderButton button:hover{
+    background-color: #12242a;
     cursor: pointer;
 }  
 /* ================================================== */
-.button6{
+.createProjectButton{
     width: 100%;
     height: 60px;
     text-align: center;
 }   
-.button6 button{
+.createProjectButton button{
     width: 480px;
     height: 100%;
-    background-color: #90C9E1;
+    background-color: #152b31;
     color: #E5F2F5;
     border-radius: 10px;
     font-size: 20px;
     font-weight: 500;
 }  
-.button6 button:hover{
-    background-color: rgb(168, 217, 238);
+.createProjectButton button:hover{
+    background-color: #12242a;
     cursor: pointer;
 }  
 /* ================================================== */
-.button7{
+.singleUserRemoveButton{
     width: 100px;
     text-align: center;
 }   
-.button7 button{
+.singleUserRemoveButton button{
     width: 100%;
     height: 100%;
-    background-color: #F96969;
+    background-color: #f54545;
     color: #E5F2F5;
     border-radius: 10px;
     font-size: 15px;
     padding:10px;
 }  
-.button7 button:hover{
-    background-color: #ff8484;
+.singleUserRemoveButton button:hover{
+    background-color: #ed5a5a;
     cursor: pointer;
 }  
 /* ================================================== */
-.button8{
+.singleUserTransferButton{
     width: 100px;
     text-align: center;
 }   
-.button8 button{
+.singleUserTransferButton button{
     width: 100%;
     height: 100%;
-    background-color: #51F47F;
+    background-color: #2bef63;
     color: #E5F2F5;
     border-radius: 10px;
     font-size: 15px;
     padding:10px;
 }  
-.button8 button:hover{
-    background-color: #89f9a9;
+.singleUserTransferButton button:hover{
+    background-color: rgb(103, 247, 144);
     cursor: pointer;
 }  
 /* ================================================== */
-.button9{
+.singleUserViewButton{
     width: 100px;
     text-align: center;
 }   
-.button9 button{
+.singleUserViewButton button{
     width: 100%;
     height: 100%;
     background-color: #c2c2c2;
@@ -459,7 +457,7 @@
     font-size: 15px;
     padding:10px;
 }  
-.button9 button:hover{
+.singleUserViewButton button:hover{
     background-color: #e6e6e6;
     cursor: pointer;
 }  
@@ -568,7 +566,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #C8EEFF;
+    background-color: #183037;
     border-radius: 10px;
     padding: 20px 10px 20px 10px;
     text-align: center;
@@ -590,7 +588,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: #B0E7FF;
+    background-color: #0C2127;
     border-radius: 10px;
     padding: 10px;
 }
@@ -618,10 +616,10 @@
 .singleStage1{
     width: 15%;
     height: 100px;
-    background-color: #E5F2F5;
+    background-color: #232f35;
     margin: 10px;
     padding: 20px;
-    color: #8E979A;
+    color: #dfe3e4;
     border-radius: 10px;
 }
 .singleStage1 h3{
@@ -631,7 +629,7 @@
     font-size: 15px;
 }
 .singleStage1:hover{
-    box-shadow: 0 0 25px #90C9E1, 0 0 5px #E5F2F5;
+    background-color: #202a30;
     cursor: pointer;
 }
 .singleStage2{
@@ -661,6 +659,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    background-color: #171f24;
 }
 .stageFormRow{
     width: 100%;

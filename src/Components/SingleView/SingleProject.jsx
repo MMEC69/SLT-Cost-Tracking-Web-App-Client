@@ -9,7 +9,7 @@ import { GlobalContext } from '../../Context/GlobalContext.jsx';
 import { activity8, activity9 } from '../../MetaData/Activities.jsx';
 import {AddCommentPopUp} from '../PopUps/PopUps.jsx';
 
-export default function SingleProject() {
+export function SingleProject() {
     const {
         activity, 
         setActivity,

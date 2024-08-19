@@ -1,25 +1,41 @@
 import React from 'react';
-import Field2 from '../Field2';
+import {
+  CreateNewProjectFormFields,
+  AddNewSingleStakeHolderFormFields,
+  RegisterAndLoginFormField
+} from '../Fields/Fields';
+
+import{
+  CreateProjectButton,
+  AddNewStakeHolderButton,
+  RemoveSubFormButton,
+  SubmitButton
+} from "../Buttons/Buttons";
+
+import {
+  RegisterHyperLink
+} from '../HyperLinks/HyperLinks';
+
+import {
+  RegisterLoginHeading,
+  StakeholdersHeading,
+  IndividualStakeHolderHeading
+} from "../TextContent/Headings"; 
+
 import styles from "../../App.module.css";
-import Button6 from '../Button6';
-import Heading2 from '../Heading2';
-import Button5 from '../Button5';
-import Heading3 from '../Heading3';
-import Button4 from '../Button4';
-import Field3 from '../Field3';
 
 //==========================================================
 export function CreateNewProjectForm() {
   return (
     <div className={styles.createNewProjectForm}>
-        <Field2/>
-        <Field2/>
-        <Field2/>
+        <CreateNewProjectFormFields/>
+        <CreateNewProjectFormFields/>
+        <CreateNewProjectFormFields/>
         <AddNewStakeHolderForm/>
-        <Field2/> 
-        <Field2/>
-        <Field2/>
-        <Button6/>
+        <CreateNewProjectFormFields/> 
+        <CreateNewProjectFormFields/>
+        <CreateNewProjectFormFields/>
+        <CreateProjectButton/>
     </div>
   );
 }
@@ -27,10 +43,10 @@ export function CreateNewProjectForm() {
 export function AddNewStakeHolderForm() {
   return (
     <div className={styles.addNewStakeHolderForm}>
-        <Heading2/>
+        <StakeholdersHeading/>
         <AddNewSingleStakeHolderForm/>
         <AddNewSingleStakeHolderForm/>
-        <Button5/>
+        <AddNewStakeHolderButton/>
     </div>
   );
 }
@@ -39,15 +55,64 @@ export function AddNewSingleStakeHolderForm() {
   return (
     <div className={styles.AddNewSingleStakeHolderForm}>
         <div className={styles.AddNewSingleStakeHolderFieldListForm}>
-            <Heading3/>
+            <IndividualStakeHolderHeading/>
             <form onSubmit="">
-                <Field3/>
-                <Field3/>
-                <Field3/>
-                <Field3/>
+                <AddNewSingleStakeHolderFormFields/>
+                <AddNewSingleStakeHolderFormFields/>
+                <AddNewSingleStakeHolderFormFields/>
+                <AddNewSingleStakeHolderFormFields/>
             </form>
         </div>
-        <Button4/>
+        <RemoveSubFormButton/>
+    </div>
+  );
+}
+//==========================================================
+export function RegisterForm() {
+  return (
+    <div className={styles.registerLoginForm}>
+        <RegisterLoginHeading/>
+        <RegisterAndLoginFormField/>
+        <RegisterAndLoginFormField/>
+        <RegisterAndLoginFormField/>
+        <RegisterAndLoginFormField/>
+        <RegisterAndLoginFormField/>
+        <SubmitButton/>
+        <div className={styles.hyperLinkLayout1}>
+          <RegisterHyperLink/>
+        </div>
+    </div>
+  )
+}
+//==========================================================
+export function LoginForm() {
+  return (
+    <div className={styles.registerLoginForm}>
+        <RegisterLoginHeading/>
+        <RegisterAndLoginFormField/>
+        <RegisterAndLoginFormField/>
+        <SubmitButton/>
+        <div className={styles.hyperLinkLayout1}>
+          <RegisterHyperLink/>
+          <RegisterHyperLink/>
+        </div>
+    </div>
+  )
+}
+//==========================================================
+export function Form5() {
+  return (
+    <div className={styles.form5}>
+        <div className={styles.form4}>
+            <IndividualStakeHolderHeading/>
+            <form onSubmit="">
+                <CreateNewProjectFormFields/>
+                <CreateNewProjectFormFields/>
+                <CreateNewProjectFormFields/>
+                <CreateNewProjectFormFields/>
+            </form>
+        </div>
+        <RemoveSubFormButton/>
     </div>
   );
 }

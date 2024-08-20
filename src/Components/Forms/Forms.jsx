@@ -2,7 +2,10 @@ import React from 'react';
 import {
   CreateNewProjectFormFields,
   AddNewSingleStakeHolderFormFields,
-  RegisterAndLoginFormField
+  RegisterAndLoginFormField,
+  AddCostFormFields,
+  ViewCostFormFields,
+  ModifyCostFormFields
 } from '../Fields/Fields';
 
 import{
@@ -100,20 +103,57 @@ export function LoginForm() {
   )
 }
 //==========================================================
-export function Form5() {
+export function AddCostForm() {
   return (
-    <div className={styles.form5}>
-        <div className={styles.form4}>
-            <IndividualStakeHolderHeading/>
-            <form onSubmit="">
-                <CreateNewProjectFormFields/>
-                <CreateNewProjectFormFields/>
-                <CreateNewProjectFormFields/>
-                <CreateNewProjectFormFields/>
-            </form>
-        </div>
-        <RemoveSubFormButton/>
-    </div>
+    <div className={styles.addCostForm}>
+      <form onSubmit="">
+          <AddCostFormFields/>
+          <AddCostFormFields/>
+          <AddCostFormFields/>
+          <AddCostFormFields/>
+      </form>
+      <SubmitButton/>
+  </div>
+  );
+}
+//==========================================================
+export function ViewCostForm() {
+  return (
+    <div className={styles.viewCostForm}>
+      <form onSubmit="">
+          <ViewCostFormFields/>
+          <ViewCostFormFields/>
+          <ViewCostFormFields/>
+          <ViewCostFormFields/>
+          <ViewCostFormFields/>
+          <ViewCostFormFields/>
+      </form>
+  </div>
+  );
+}
+//==========================================================
+export function ModifyCostForm() {
+  return (
+    <div className={styles.modifyCostForm}>
+      <form onSubmit="">
+          <ModifyCostFormFields/>
+          <ModifyCostFormFields/>
+          <ModifyCostFormFields/>
+          <ModifyCostFormFields/>
+          <ModifyCostFormFields/>
+          <ModifyCostFormFields/>
+      </form>
+      <SubmitButton/>
+  </div>
+  );
+}
+//==========================================================
+export function ConfirmForm() {
+  return (
+    <div className={styles.confirmPopUpForm}>
+      <SubmitButton/>
+      <SubmitButton/>
+  </div>
   );
 }
 //==========================================================

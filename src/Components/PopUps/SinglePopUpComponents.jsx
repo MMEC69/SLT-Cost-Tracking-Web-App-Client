@@ -10,8 +10,8 @@ export function SinglePopUpComment() {
                 <FaUserCircle />
             </div>
             <div className={styles.commentDetails}>
-                <span>User Name</span>
-                <span>The comment user has placed</span>
+                <span className={styles.addCommentUserName}>User Name</span>
+                <span className={styles.addCommentComment}>The comment user has placed</span>
             </div>
         </div>
         <div className={styles.commentTime}>

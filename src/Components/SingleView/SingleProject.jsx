@@ -5,10 +5,13 @@ import {
     SingleProjectViewSelectButton, 
     SingleProjectViewRemoveButton 
 } from '../Buttons/Buttons.jsx';
+
 import { GlobalContext } from '../../Context/GlobalContext.jsx';
 import { activity8, activity9 } from '../../MetaData/Activities.jsx';
-import {AddCommentPopUp} from '../PopUps/PopUps.jsx';
+import {AddCommentPopUp, AddCostPopUp} from '../PopUps/PopUps.jsx';
 
+import { ConfirmPopUp } from '../PopUps/PopUps';
+// ===============================================================
 export function SingleProject() {
     const {
         activity, 
@@ -16,6 +19,8 @@ export function SingleProject() {
     } = useContext(GlobalContext);
 
     const [trigger1, setTrigger1] = useState(false);
+    const [trigger2, setTrigger2] = useState(false);
+    const [trigger3, setTrigger3] = useState(false);
 
     const activity8Function = () => {
         console.log("> activity8Function initiated");
@@ -34,23 +39,22 @@ export function SingleProject() {
     const addCommentHandleClick = () => {
         console.log("> addCommentHandleClick initiated");
         setTrigger1(true);
-        console.log(trigger1)
         console.log("> addCommentHandleClick ended");
     }
-    const popup2Function = () => {
-        console.log("> popup2Function initiated");
-        setPopup(popup2);
-        console.log("> popup2Function ended");
+    const addCostHandleClick = () => {
+        console.log("> addCostHandleClick initiated");
+        setTrigger2(true);
+        console.log("> addCostHandleClick ended");
     }
     const popup3Function = () => {
         console.log("> popup3Function initiated");
         setPopup(popup3);
         console.log("> popup3Function ended");
     }
-    const popup4Function = () => {
-        console.log("> popup4Function initiated");
-        setPopup(popup4);
-        console.log("> popup4Function ended");
+    const removeProjectHandleClick = () => {
+        console.log("> removeProjectHandleClick initiated");
+        setTrigger3(true);
+        console.log("> removeProjectHandleClick ended");
     }
   return (
     <div className={styles.singleProject}>
@@ -68,7 +72,7 @@ export function SingleProject() {
                 />
                 <SingleProjectViewFunctionButton
                     buttonName = "Add Cost"
-                    onClick = {popup2Function}
+                    onClick = {addCostHandleClick}
                 />
                 <SingleProjectViewSelectButton
                     buttonName = "Select State"
@@ -86,12 +90,20 @@ export function SingleProject() {
                 />
                 <SingleProjectViewRemoveButton
                     buttonName = "Remove"
-                    onClick = {popup4Function}
+                    onClick = {removeProjectHandleClick}
                 />
             </div>
             <AddCommentPopUp
-            trigger = {trigger1}
-            setTrigger = {setTrigger1}
+                trigger = {trigger1}
+                setTrigger = {setTrigger1}
+            />
+            <AddCostPopUp
+                trigger = {trigger2}
+                setTrigger = {setTrigger2}
+            />
+            <ConfirmPopUp
+                trigger = {trigger3}
+                setTrigger = {setTrigger3}
             />
         </div>
     </div>

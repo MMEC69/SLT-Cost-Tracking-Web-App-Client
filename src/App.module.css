@@ -105,6 +105,84 @@
 .createNewProjectFormField input:invalid[focused = "true"] ~ span{
     display: block;
 } */
+ /* -------------------------------------------------------------- */
+.addCostFormField{
+    min-width: 400px;
+    color: #9EBAC2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #182c31;
+}
+.addCostFormField label{
+    width: 100%;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: #182c31;
+    text-align: left;
+    color: #fdfdfd;
+}
+.addCostFormField input{
+    width: 100%;
+    border: none;
+    padding: 5px 0px;
+    font-size: 18px;
+    background-color: #182c31;
+    border-bottom: 1px #ffffff solid;
+}
+/* --------------------------------------------------------------- */
+.viewCostFormField{
+    min-width: 400px;
+    color: #9EBAC2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #182c31;
+}
+.viewCostFormField label{
+    width: 100%;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: #182c31;
+    text-align: left;
+    color: #fdfdfd;
+}
+.viewCostFormField input{
+    width: 100%;
+    border: none;
+    padding: 5px 0px;
+    font-size: 18px;
+    background-color: #182c31;
+    border-bottom: 1px #ffffff solid;
+}
+/* --------------------------------------------------------------- */
+.modifyCostFormField{
+    min-width: 400px;
+    color: #9EBAC2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #182c31;
+}
+.modifyCostFormField label{
+    width: 100%;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: #182c31;
+    text-align: left;
+    color: #fdfdfd;
+}
+.modifyCostFormField input{
+    width: 100%;
+    border: none;
+    padding: 5px 0px;
+    font-size: 18px;
+    background-color: #182c31;
+    border-bottom: 1px #ffffff solid;
+}
 /* ================================================== */
 .addNewSingleStakeHolderFormFields{
     min-width: 400px;
@@ -215,6 +293,85 @@
     border-radius: 10px;
     padding: 10px;
 }
+/* ------------------------------------------------------- */
+.addCostForm{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: #182c31;
+    border-radius: 10px;
+    padding: 10px;
+}
+.addCostForm form{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    background-color: #182c31;
+    border-radius: 10px;
+    padding: 10px;
+}
+/* -------------------------------------------------------------- */
+.viewCostForm{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: #182c31;
+    border-radius: 10px;
+    padding: 10px;
+}
+.viewCostForm form{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    background-color: #182c31;
+    border-radius: 10px;
+    padding: 10px;
+}
+/* -------------------------------------------------------------- */
+.modifyCostForm{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: #182c31;
+    border-radius: 10px;
+    padding: 10px;
+}
+.modifyCostForms form{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    background-color: #182c31;
+    border-radius: 10px;
+    padding: 10px;
+}
+/* -------------------------------------------------------------- */
+.confirmPopUpForm{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 10px;
+}
 /* ================================================== */
 .form3{
     width: 100%;
@@ -314,6 +471,44 @@
 }    
 .button2 button:hover{
     background-color: #1c2b2f;
+    color: #ffffff;
+    cursor: pointer;
+} 
+/* ================================================== */
+.filterButton{
+    width: 100px;
+    text-align: center;
+}
+.filterButton button{
+    width: 100px;
+    height: 50px;
+    background-color: #245363;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+}    
+.filterButton button:hover{
+    background-color: #214550;
+    color: #ffffff;
+    cursor: pointer;
+} 
+/* ------------------------------------------------------ */
+.filterApplyButton{
+    width: 100px;
+    text-align: center;
+}
+.filterApplyButton button{
+    width: 100px;
+    height: 50px;
+    background-color: #2db431;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+}    
+.filterApplyButton button:hover{
+    background-color: #2aa52e;
     color: #ffffff;
     cursor: pointer;
 } 
@@ -516,6 +711,46 @@
     padding: 10px;
     font-size: 15px;
     border-radius: 10px;
+}
+/* ================================================== */
+.filterBar{
+    width: auto;
+    overflow: hidden;
+    background-color: #0C2127;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.filterBarContainer{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #3a3e3f;
+    border-radius: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    text-align: center;
+}
+.filterResultContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: #11333d;
+}
+.filterResult{
+    width: 24%;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 3px;
+    background-color: #476771;
+    color: #ffff;
 }
 /* ================================================== */
 .singleProject{
@@ -728,21 +963,83 @@
 }
 /* ================================================== */
 .popUpTitle{
-    width: 100%;
-    height: 35px;
+    height: 40px;
     padding: 2px 10px 2px 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-radius: 5px;
-    background-color: #0C2127;
+    background-color: #1a2d32;
     align-items: center;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
 }
 /* ================================================== */
 .popUpDisplayArea{
     width: 100%;
-    height: 80%;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #203d45;
+    position: absolute;
+    top: 45px;
+}
+/* ------------------------------------------------------- */
+.commentListWrapper{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.commentList{
+    width: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* ------------------------------------------------------------ */
+.addCostFormWrapper{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.addCostForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* ------------------------------------------------------------ */
+.viewCostFormWrapper{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-y: scroll;
+}
+.viewCostForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* ------------------------------------------------------------ */
+.confirmPopUpWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.confirmPopUp{
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -750,17 +1047,27 @@
 /* ================================================== */
 .singlePopUpComment{
     width: 100%;
-    background-color: #F3F9FC;
+    background-color: #0C2127;
     display: flex;
     flex-direction: row;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
 }
 .commentDescription{
     width: 90%;
     display: flex;
     flex-direction: row;
+    gap: 10px;
     justify-content: left;
 }
 .commentProfilePicture{
+    font-size: 25px;
+}
+.addCommentUserName{
+    font-size: 20px;
+}
+.addCommentComment{
     font-size: 15px;
 }
 .commentDetails{
@@ -771,8 +1078,31 @@
 .commentTime{
     width: 8%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: right;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+/* ================================================== */
+.addCommentInputArea{
+    width: 99.5%;
+    height: 50px;
+    padding: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: 2px;
+    right: 2px;
+    border-radius: 10px;
+    background-color: #35484e;
+}
+.addCommentInputArea input{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #35484e;
 }
 /* ================================================== */
 .popUpLayout{
@@ -791,25 +1121,26 @@
     max-width: 800px;
     height: 560px;
     position: relative;
-    background-color: #FFFFFF;
+    background-color: #203d45;
     border: 1px solid black;
     border-radius: 10px;
+    position: relative;
 }
 .popUpLayoutMediumInner{
     width: 100%;
     max-width: 800px;
     height: 460px;
     position: relative;
-    background-color: #FFFFFF;
+    background-color: #203d45;
     border: 1px solid black;
     border-radius: 10px;
 }
 .popUpLayoutSmallInner{
     width: 100%;
     max-width: 800px;
-    height: 360px;
+    height: 200px;
     position: relative;
-    background-color: #FFFFFF;
+    background-color: #203d45;
     border: 1px solid black;
     border-radius: 10px;
 }

@@ -28,6 +28,34 @@ export function NavBarButton(props) {
   );
 }
 //==========================================================
+export function FilterBarButton(props) {
+  const {
+      onClick,
+      buttonName
+  } = props;
+  return (
+    <div className={styles.filterButton}>
+        <button onClick={onClick}>
+            {buttonName}
+        </button>
+    </div>
+  );
+}
+//==========================================================
+export function FilterBarApplyButton(props) {
+  const {
+      onClick,
+      buttonName
+  } = props;
+return (
+  <div className={styles.filterApplyButton}>
+      <button onClick={onClick}>
+          {buttonName}
+      </button>
+  </div>
+);
+}
+//==========================================================
 export function SingleProjectViewFunctionButton(props) {
     const {
       buttonName,
@@ -50,7 +78,7 @@ export function SingleProjectViewFunctionButton(props) {
     } = props;
       return (
         <div className={`${styles.singleProjectViewButton} ${styles.singleProjectViewRemoveButton}`}>
-            <button>
+            <button onClick={onClick}>
               {buttonName}
             </button>
         </div>

@@ -14,6 +14,18 @@ export function PopUpCloseButton(props) {
       );
 }
 //==========================================================
+export function PopUpBackButton(props) {
+  const {
+      buttonName,
+      onClick
+    } = props;
+    return (
+      <div className = {styles.popUpBackButton}>
+          <button onClick={onClick}>{buttonName}</button>
+      </div>
+    );
+}
+//==========================================================
 export function NavBarButton(props) {
     const {
         onClick,

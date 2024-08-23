@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from "../../App.module.css";
-import {PopUpCloseButton} from "../Buttons/Buttons.jsx";
+import {PopUpBackButton, PopUpCloseButton} from "../Buttons/Buttons.jsx";
 
+//=======================================================
 export function PopUpTitle(props) {
   const {
     title,
@@ -17,3 +18,20 @@ export function PopUpTitle(props) {
     </div>
   )
 }
+//=======================================================
+export function ObjectPopUpFormTitle(props) {
+  const {
+    title,
+    setTrigger
+  } = props;
+  return (
+    <div className={styles.objectPopUpTitle}>
+        <span>This is the title</span>
+        <PopUpBackButton
+          buttonName = "Go Back"
+          onClick = {(e) => setTrigger(false)}
+        />
+    </div>
+  )
+}
+//=======================================================

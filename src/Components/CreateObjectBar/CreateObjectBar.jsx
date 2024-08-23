@@ -4,6 +4,7 @@ import {
 } from '../Buttons/Buttons.jsx';
 
 import styles from "../../App.module.css";
+import { ObjectFormPopUp } from '../PopUps/ObjectSectionPopUps.jsx';
 
 // ======================================================================
 export function CreateObjectBar() {
@@ -23,6 +24,10 @@ export function CreateObjectBar() {
                 buttonName = "Create Object"
             />
         </div>
+        <ObjectFormPopUp
+            trigger = {trigger1}
+            setTrigger = {setTrigger1}
+        />
     </div>
   );
 }

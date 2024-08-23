@@ -157,3 +157,15 @@ export function ConfirmForm() {
   );
 }
 //==========================================================
+export function ObjectForm() {
+  return (
+    <div className={styles.objectForm}>
+      <ModifyCostFormFields/>
+      <ModifyCostFormFields/>
+      <ModifyCostFormFields/>
+      <ModifyCostFormFields/>
+      <SubmitButton/>
+    </div>
+  );
+}
+//==========================================================

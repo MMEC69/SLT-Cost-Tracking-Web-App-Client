@@ -5,8 +5,11 @@ import {
   AddCostForm,
   ViewCostForm,
   ModifyCostForm,
-  ConfirmForm
+  ConfirmForm,
+  ObjectForm
 } from "../Forms/Forms";
+import { SingleProject } from '../SingleView/SingleProject';
+import { ObjectPopUpFormTitle } from './PopUpTitle';
 
 // ====================================================
 export function AddCommentPopUpDisplayArea() {
@@ -88,6 +91,41 @@ export function ConfirmPopUpDisplayArea() {
           <ConfirmForm/>
         </div>
       </div>
+    </div>
+  );
+}
+// ====================================================
+export function ObjectFormDisplayArea() {
+  return (
+    <div className={styles.popUpDisplayArea}>
+        <div className={styles.objectPopUp}>
+          <ObjectFormView/>
+          <ObjectListView/>
+        </div>
+    </div>
+  );
+}
+// ----------------------------------------------------
+export function ObjectFormView() {
+  return (
+    <div className={styles.objectFormWrapper}>
+        <ObjectPopUpFormTitle/>
+        <ObjectForm/>
+    </div>
+  );
+}
+// ----------------------------------------------------
+export function ObjectListView() {
+  return (
+    <div className={styles.objectListViewWrapper}>
+        <div className={styles.objectListView}>
+          <SingleProject/>
+          <SingleProject/>
+          <SingleProject/>
+          <SingleProject/>
+          <SingleProject/>
+          <SingleProject/>
+        </div>
     </div>
   );
 }

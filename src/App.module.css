@@ -9,14 +9,14 @@
 .welcomeButton{
     width: 216px;
     height: 52px;
-    background-color: #C8EEFF;
+    background-color: #10252f;
     font-size: 20px;
-    color: #9EBAC2;
+    color: #c8dae0;
     border-radius: 10px;
 }
 .welcomeButton:hover{
-    background-color: #9cddfb;
-    color: #F4F9FA;
+    background-color: #0e1d23;
+    color: #ebf3f6;
     cursor: pointer;
 }
 /* ================================================== */
@@ -931,6 +931,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    border-radius: 10px;
     background-color: #171f24;
 }
 .stageFormRow{
@@ -1271,5 +1272,128 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+/* ================================================== */
+.viewStage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.viewStageLeftView{
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.viewStageMiddleViewWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.viewStageMiddleView{
+    width: 60%;
+    height: 840px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    background-color: #1c2e33;
+    border-radius: 10px;
+    padding: 10px;
+}
+.viewStageRightViewWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.viewStageRightView{
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+.viewStageLeftViewPanel{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    background-color: #1c2e33;
+    border-radius: 10px;
+}
+.viewStageLeftViewListWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.viewStageLeftViewList{
+    width: 100%;
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: #1c2e33;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+.viewStageRightViewPanel{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    background-color: #1c2e33;
+    border-radius: 10px;
+}
+.viewStageRightViewListWrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.viewStageRightViewList{
+    width: 100%;
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: #1c2e33;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+/* ================================================== */
+.singleObject{
+    width: 100%;
+    min-height: 50px;
+    max-height: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #445055;
+    border-radius: 10px;
+    align-items: center;
+}
+.singleObject span{
+    cursor: pointer;
+    color: #9ea5a6;
+}
+.singleObject span:hover{
+    color: #d9e1e2;
 }
 /* ================================================== */

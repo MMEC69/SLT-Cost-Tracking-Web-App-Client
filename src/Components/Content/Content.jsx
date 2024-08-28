@@ -9,7 +9,9 @@ import {
     activity6, 
     activity7, 
     activity8,
-    activity9
+    activity9,
+    activity10,
+    activity11
  } from '../../MetaData/Activities';
 import {ProjectList} from '../ViewProjectList/ViewProjectList';
 import {DashBoard} from '../Dashboard/DashBoard';
@@ -21,6 +23,8 @@ import {Profile} from '../Profile/Profile';
 import styles from "../../App.module.css";
 import {ViewProject} from '../ViewProject/ViewProject';
 import {ModifyProject} from '../ModifyProject/ModifyProject';
+import { ViewStage } from '../ViewStage/ViewStage';
+import { ModifyStage } from '../ModifyStage/ModifyStage';
 
 export default function () {
     const {activity, setActivity} = useContext(GlobalContext);
@@ -52,6 +56,12 @@ export default function () {
         }
         {activity === activity9 && 
             <ModifyProject/>
+        }
+        {activity === activity10 && 
+            <ViewStage/>
+        }
+        {activity === activity11 && 
+            <ModifyStage/>
         }
     </div>
   );
